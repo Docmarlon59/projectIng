@@ -1,5 +1,6 @@
 
 import 'package:cargas_maximas_f/src/pages/horarios_page.dart';
+import 'package:cargas_maximas_f/src/pages/scanner_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -103,6 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
               image: ExactAssetImage(asset), fit: BoxFit.cover)),
       child: FlatButton(
         onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ScannerPage()),
+          );
         },
         child: Padding(
           padding: const EdgeInsets.only(top: 60, left: 0),
@@ -139,6 +144,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 image: ExactAssetImage(asset), fit: BoxFit.cover)),
         child: FlatButton(
           onPressed: () {
+            
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Horarios()),
+          );
           },
           child: Padding(
             padding: const EdgeInsets.only(top: 60, left: 0),
